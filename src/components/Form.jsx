@@ -1,27 +1,23 @@
+import { render } from '@testing-library/react'
 import React from 'react'
 
 export default function Form() {
-
-    const Form = () => {
-        return(
-            <form>
-                <input type="text" className="todo-input" />
-                <button className="todo-button" type="submit">
-                    <i className="fas fa-plus-square"></i>
-                </button>
-                <div className="select">
-                    <select name="todos" className="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
-                    </select>
-                </div>
-            </form>
-        )
-    }
     return (
-        <div>
-            <p>Form goes here</p>
-        </div>
-    )
+        <form>
+            <input type="text" className="todo-input" />
+            <button className="todo-button" type="submit">
+                <i className="fas fa-plus-square"></i>
+            </button>
+            <div className="select">
+                <select name="todos" className="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>    
+    )               
+    
 }
+
+
